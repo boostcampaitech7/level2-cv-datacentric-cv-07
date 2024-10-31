@@ -1,1 +1,5 @@
 # 중복되는 파일 최대한 없도록 정리해줘!
+**/model.py
+**/loss.py
+**/east_dataset.py
+**/detect.py
