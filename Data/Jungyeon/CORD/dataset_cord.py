@@ -348,9 +348,8 @@ class SceneTextDataset(Dataset):
         self.split = split
         total_anno = dict(images=dict())
     
-        with open(osp.join(root_dir, 'cord_train.json'), 'r', encoding='utf-8') as f:
+        with open(osp.join(root_dir, 'cord.json'), 'r', encoding='utf-8') as f:
             anno = json.load(f)
-            # print(anno)
         
         for im in anno['images']:
             total_anno['images'][im] = anno['images'][im]
@@ -383,7 +382,7 @@ class SceneTextDataset(Dataset):
 
     def __getitem__(self, idx):
         image_fname = self.image_fnames[idx]
-        image_fpath = osp.join(self.root_dir, 'img', self.split, image_fname)
+        image_fpath = osp.join(self.root_dir, 'img', image_fname)
 
         vertices, labels = [], []
         for word_info in self.anno['images'][image_fname]['words'].values():
