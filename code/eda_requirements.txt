@@ -1,0 +1,6 @@
+pandas==2.0.3
+seaborn==0.13.2
+Pillow==9.4.0
+numpy==1.23.5
+pathlib==1.0.1
+matplotlib==3.7.5
