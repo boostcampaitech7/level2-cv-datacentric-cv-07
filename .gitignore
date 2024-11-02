@@ -3,3 +3,7 @@
 **/loss.py
 **/east_dataset.py
 **/detect.py
+
+# sj
+*.txt
+**/font
