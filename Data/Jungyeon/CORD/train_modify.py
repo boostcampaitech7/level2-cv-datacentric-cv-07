@@ -44,7 +44,7 @@ def parse_args():
 
 
 def do_training(data_dir, model_dir, device, image_size, input_size, num_workers, batch_size,
-                learning_rate, max_epoch, save_interval, pretrained_fpath):
+                learning_rate, max_epoch, save_interval):
     dataset = SceneTextDataset(
         data_dir,
         split='train',
@@ -59,12 +59,15 @@ def do_training(data_dir, model_dir, device, image_size, input_size, num_workers
         shuffle=True,
         num_workers=num_workers
     )
-
+        
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     model = EAST()
     model.to(device)
+    
     # CORD로 pretrain된 모델 weight 불러오기
+    pretrained_fpath = "/data/ephemeral/home/Jungyeon/new_datasets/CORD/cord_pretrained_model_weight.pth"
     model.load_state_dict(torch.load(pretrained_fpath, map_location='cpu'))
+    
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     scheduler = lr_scheduler.MultiStepLR(optimizer, milestones=[max_epoch // 2], gamma=0.1)
 
@@ -99,14 +102,13 @@ def do_training(data_dir, model_dir, device, image_size, input_size, num_workers
             if not osp.exists(model_dir):
                 os.makedirs(model_dir)
 
-            ckpt_fpath = osp.join(model_dir, 'latest.pth')
+            ckpt_fpath = osp.join(model_dir, f'latest.pth')
             torch.save(model.state_dict(), ckpt_fpath)
 
 
-def main(args, pretrained_fpath):
-    do_training(**args.__dict__, pretrained_fpath)
+def main(args):
+    do_training(**args.__dict__)
 
 if __name__ == '__main__':
     args = parse_args()
-    pretrained_fpath = "/data/ephemeral/home/Jungyeon/new_datasets/CORD/cord_pretrained_model_weight.pth"
-    main(args, pretrained_fpath)
+    main(args)
