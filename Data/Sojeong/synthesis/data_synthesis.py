@@ -175,7 +175,7 @@ def save_to_ufo_format(document, img_name, ufo_data):
 json_path = "/data/ephemeral/home/data/chinese_receipt/ufo/train.json"
 ufo_data = {"images": {}}
 
-for idx in range(1):
+for idx in range(25):
     text_file = create_text_file(json_path, idx)
     words = get_words(text_file, count=100)
     document = make_document(words)
@@ -183,7 +183,7 @@ for idx in range(1):
     img_name = os.path.join(image_dir, f"document_{idx}.jpg")
     document["image"].save(img_name)
 
-    for angle in range(25):
+    for angle in range(4):
         aug_doc = perturb_document_inplace(make_document(words))
         aug_img_name = os.path.join(image_dir, f"document_{idx}_aug_{angle}.jpg")
         aug_doc["image"].save(aug_img_name)
