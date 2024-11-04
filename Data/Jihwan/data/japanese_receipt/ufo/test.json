@@ -1,0 +1,844 @@
+{
+    "images": {
+        "extractor.ja.in_house.appen_000344_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 1778,
+            "img_h": 3078,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000215_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000616_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000116_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000013_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000538_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000514_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000055_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 2277,
+            "img_h": 3291,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000495_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000822_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 3024,
+            "img_h": 4032,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000474_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000298_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000962_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000413_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000722_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 1583,
+            "img_h": 3649,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000198_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000280_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000047_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 2584,
+            "img_h": 4028,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_001000_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000654_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000220_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000410_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000064_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 1547,
+            "img_h": 4009,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000550_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000584_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000823_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000500_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 1190,
+            "img_h": 3861,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000038_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 3024,
+            "img_h": 4032,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000161_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 960,
+            "img_h": 1280,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        },
+        "extractor.ja.in_house.appen_000788_page0001.jpg": {
+            "paragraphs": {},
+            "words": {
+                "0001": {
+                    "points": [],
+                    "transcription": ""
+                }
+            },
+            "chars": {},
+            "img_w": 2572,
+            "img_h": 3952,
+            "num_patches": null,
+            "tags": [],
+            "relations": {},
+            "annotation_log": {
+                "worker": "worker",
+                "timestamp": "2024-06-07",
+                "tool_version": "",
+                "source": null
+            },
+            "license_tag": {
+                "usability": true,
+                "public": false,
+                "commercial": true,
+                "type": null,
+                "holder": "Upstage"
+            }
+        }
+    }
+}
