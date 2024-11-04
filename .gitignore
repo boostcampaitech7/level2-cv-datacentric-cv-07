@@ -3,3 +3,11 @@ code/loss.py
 code/east_dataset.py
 code/detect.py
 pths/
+img/
+box_image/
+bbox_image/
+result
+sample_submission.csv
+trained_models
+predictions
+__pycache__
