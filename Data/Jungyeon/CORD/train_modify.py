@@ -97,12 +97,13 @@ def do_training(data_dir, model_dir, device, image_size, input_size, num_workers
 
         print('Mean loss: {:.4f} | Elapsed time: {}'.format(
             epoch_loss / num_batches, timedelta(seconds=time.time() - epoch_start)))
-
-        if (epoch + 1) % save_interval == 0:
+        
+        if epoch_loss < min_loss:
+            min_loss = epoch_loss
             if not osp.exists(model_dir):
                 os.makedirs(model_dir)
 
-            ckpt_fpath = osp.join(model_dir, f'latest.pth')
+            ckpt_fpath = osp.join(model_dir, 'epoch_{epoch}.pth')
             torch.save(model.state_dict(), ckpt_fpath)
 
 
