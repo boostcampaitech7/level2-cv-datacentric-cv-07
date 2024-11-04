@@ -1,6 +1,6 @@
 import json
 import os
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw,ImageOps
 import numpy as np
 
 #json 파싱
@@ -37,7 +37,8 @@ def process_images_with_bboxes(image_dir, annotation_path, output_dir):
             continue
 
         # 이미지 로드
-        image = Image.open(image_path).convert("RGB")
+        #image = Image.open(image_path).convert("RGB")
+        image = ImageOps.exif_transpose(Image.open(image_path)).convert("RGB")
 
         # 단어 데이터 사용해서 상자 그리기
         image_with_bboxes = draw_bounding_boxes(image, annotation_data['words'])
