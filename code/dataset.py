@@ -96,7 +96,7 @@ def rotate_vertices(vertices, theta, anchor=None):
     '''
     v = vertices.reshape((4,2)).T
     if anchor is None:
-        anchor = v[:,:1]
+        ahncor = v[:,:1] # v[:, 0], v[:, 0:1]
     rotate_mat = get_rotate_mat(theta)
     res = np.dot(rotate_mat, v - anchor)
     return (res + anchor).T.reshape(-1)
@@ -200,7 +200,7 @@ def crop_img(img, vertices, labels, length):
     h, w = img.height, img.width
     # confirm the shortest side of image >= length
     if h >= w and w < length:
-        img = img.resize((length, int(h * length / w)), Image.BILINEAR)
+        img = img.resize((length, int(h * length / w)), Image.BILINEAR) # (w,h) 순서
     elif h < w and h < length:
         img = img.resize((int(w * length / h), length), Image.BILINEAR)
     ratio_w = img.width / w
