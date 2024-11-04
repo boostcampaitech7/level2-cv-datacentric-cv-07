@@ -1,7 +1,8 @@
-code/model.py
-code/loss.py
-code/east_dataset.py
-code/detect.py
+# 중복되는 파일 최대한 없도록 정리해줘!
+**/model.py
+**/loss.py
+**/east_dataset.py
+**/detect.py
 pths/
 img/
 box_image/
@@ -11,4 +12,4 @@ sample_submission.csv
 trained_models
 predictions
 __pycache__
-._.DS_Store
+**/._.DS_Store
