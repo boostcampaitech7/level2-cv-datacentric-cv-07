@@ -12,3 +12,9 @@ trained_models
 predictions
 __pycache__
 ._.DS_Store
+data.py
+data_analysis.py
+EDA.ipynb
+maina.ipynb
+data
+code
