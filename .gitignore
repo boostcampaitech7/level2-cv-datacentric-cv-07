@@ -11,3 +11,4 @@ sample_submission.csv
 trained_models
 predictions
 __pycache__
+._.DS_Store
