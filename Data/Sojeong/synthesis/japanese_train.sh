@@ -3,6 +3,7 @@ python data_synthesis.py\
     --json_path "/data/ephemeral/home/data/japanese_receipt/ufo/train.json" \
     --language "ja" \
     --fonts "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/Harenosora.otf" "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/NikkyouSans-mLKax.ttf" "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/TakaoMincho.ttf"\
+    --language_save "ja" \
     #"/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/chicrayon.ttf" \
     # 
     #  \

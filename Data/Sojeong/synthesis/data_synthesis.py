@@ -20,13 +20,14 @@ def parse_args():
         "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/NikkyouSans-mLKax.ttf",
         "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/TakaoMincho.ttf"
     ], help="List of font paths")
+    parser.add_argument("--language_save", type=str, default="zh", help="Language for save name")
     return parser.parse_args()
 
 # Set up directories for output
 args = parse_args()
 output_dir = args.output_dir
-ufo_dir = os.path.join(output_dir, "ufo")
-image_dir = os.path.join(output_dir, "images")
+ufo_dir = output_dir
+image_dir = os.path.join(output_dir, "img")
 os.makedirs(ufo_dir, exist_ok=True)
 os.makedirs(image_dir, exist_ok=True)
 
@@ -228,19 +229,22 @@ for idx in range(40):
     text_file = create_text_file(json_path, idx)
     words = get_words(text_file, count=100)
     document = make_document(words)
-
-    img_name = os.path.join(image_dir, f"document_{idx}.jpg")
+    language_save = args.language_save
+    
+    # 기본 이미지 저장 및 UFO 형식 저장
+    img_name = os.path.join(image_dir, f"{language_save}_document_{idx}.jpg")
     document["image"].save(img_name)
+    save_to_ufo_format(document, f"{language_save}_document_{idx}.jpg", ufo_data)  # 기본 이미지에 대한 bbox 저장
 
-    # Generate two images with elastic transformations and two without
+    # Augmented 이미지 생성 및 저장
     for angle in range(4):
-        apply_elastic = angle < 2  # Apply elastic transformation for the first two images
+        apply_elastic = angle < 2  # 첫 두 장에만 elastic 적용
         aug_doc = perturb_document_inplace(make_document(words), apply_elastic=apply_elastic)
-        aug_img_name = os.path.join(image_dir, f"document_{idx}_aug_{angle}.jpg")
+        aug_img_name = os.path.join(image_dir, f"{language_save}_document_{idx}_aug_{angle}.jpg")
         aug_doc["image"].save(aug_img_name)
-        save_to_ufo_format(aug_doc, aug_img_name, ufo_data)
+        save_to_ufo_format(aug_doc, f"{language_save}_document_{idx}_aug_{angle}.jpg", ufo_data)
 
-# Save UFO JSON data
+# Save UFO JSON data with bbox information for all images
 ufo_json_path = os.path.join(ufo_dir, "ufo_data.json")
 with open(ufo_json_path, "w", encoding="utf-8") as f:
     json.dump(ufo_data, f, ensure_ascii=False, indent=4)
