@@ -6,7 +6,6 @@
 **/__pycache__/
 
 # sj
-*.txt
 **/font
 synth_data/
 no/

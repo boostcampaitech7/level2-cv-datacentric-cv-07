@@ -8,18 +8,13 @@ from trdg.generators import GeneratorFromStrings
 import argparse
 from scipy.ndimage import gaussian_filter, map_coordinates
 
-# Argument parser for command-line options
+# Argument parser
 def parse_args():
     parser = argparse.ArgumentParser(description="Data synthesis for Japanese receipt")
     parser.add_argument("--output_dir", type=str, default="./synth_data/japanese_receipt", help="Output directory")
-    parser.add_argument("--json_path", type=str, default="/data/ephemeral/home/data/japanese_receipt/ufo/train.json", help="Path to JSON file")
+    parser.add_argument("--json_path", type=str, default="./train.json", help="Path to JSON file")
     parser.add_argument("--language", type=str, default="ja", help="Language for text generation")
-    parser.add_argument("--fonts", nargs='+', default=[
-        "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/chicrayon.ttf",
-        "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/Harenosora.otf",
-        "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/NikkyouSans-mLKax.ttf",
-        "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/font/ja/TakaoMincho.ttf"
-    ], help="List of font paths")
+    parser.add_argument("--fonts", nargs='+', help="List of font paths")
     parser.add_argument("--language_save", type=str, default="zh", help="Language for save name")
     return parser.parse_args()
 
