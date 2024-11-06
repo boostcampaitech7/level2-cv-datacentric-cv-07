@@ -9,5 +9,5 @@
    ```sh
     chmod +x ./thai_train.sh
 3. Run the script:
-    '''sh
+   ```sh
     ./thai_train.sh
