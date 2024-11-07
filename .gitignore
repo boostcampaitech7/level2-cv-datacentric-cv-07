@@ -2,4 +2,10 @@
 **/model.py
 **/loss.py
 **/east_dataset.py
-**/detect.py
+#**/detect.py
+**/deteval.py
+pths/
+trained_models/
+predictions/
+__pycache__/
+wandb/
