@@ -134,12 +134,12 @@ For full details on the CORD license and permissions, please refer to the [offic
       <td align="center">🍀서정연</td>
     </tr>
     <tr>
-      <td align="center">서버 관리, Failure Analysis, 앙상블</td>
-      <td align="center">데이터 전처리,Augmentation</td>
-      <td align="center">EDA, 데이터 전처리, Augmentation</td>
-      <td align="center">데이터 전처리, Augmentation</td>
-      <td align="center">스케줄링, 문서화, 데이터 합성</td>
-      <td align="center">외부 데이터셋 학습, 깃 관리</td>
+      <td align="center">서버 관리, <br>Failure Analysis, <br>앙상블</td>
+      <td align="center">데이터 전처리, <br>Augmentation</td>
+      <td align="center">EDA, 데이터 전처리, <br>Augmentation</td>
+      <td align="center">데이터 전처리, <br>Augmentation</td>
+      <td align="center">스케줄링, <br>문서화, <br>데이터 합성</td>
+      <td align="center">외부 데이터셋 학습, <br>깃 관리</td>
     </tr>
   </table>
 </div>
