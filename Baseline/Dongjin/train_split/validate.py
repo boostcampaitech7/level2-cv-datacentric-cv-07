@@ -67,8 +67,7 @@ if __name__ == '__main__':
                 if os.path.exists(save_predict_path):
                     continue
                 
-                # 추론결과 빈 파일 생성
-                # 작업 안겹치는 용도
+                # 빈 파일 생성: 프로세스 동시 실행 시 작업 안겹치는 용도
                 with open(save_predict_path, 'a') as f:
                     f.write("")
 
@@ -88,22 +87,28 @@ if __name__ == '__main__':
                 deteval = calc_deteval_metrics(predicts_simple, valid.anns_simple)
                 precision, recall, hmean = deteval['total']['precision'], deteval['total']['recall'], deteval['total']['hmean']
                 
-                # 로그 기록하기
+                # 로그 기록 및 저장
                 log = f'epoch: {epoch}, precision: {precision:.4f}, recall: {recall:.4f}, f1: {hmean:.4f}'
                 print(log)
 
+                # 로그 저장
                 with FileLock(log_lock_path): # 다른 프로세스 접근 방지
+                    # 로그 파일이 존재하면 추가
                     if os.path.exists(log_path):
                         with open(log_path, 'r') as f:
                             logs = f.readlines()
-                        logs.append(log)
+                        logs.append(log) # 로그 추가
 
+                        # 로그 정렬
                         logs_dict = utils.read_log(logs=logs)
                         indices = np.argsort(logs_dict['epoch'])
                         logs = [logs[index].replace("\n", "")+"\n" for index in indices]
 
+                        # 로그 저장
                         with open(log_path, 'w') as f:
-                            f.writelines(logs)
+                            f.writelines(logs) 
+
+                    # 로그 파일이 존재하지 않으면 생성 및 저장
                     else:
                         with open(log_path, 'w') as f:
                             f.write(log + '\n')

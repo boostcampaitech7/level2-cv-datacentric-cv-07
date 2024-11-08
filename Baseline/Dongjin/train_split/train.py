@@ -112,7 +112,7 @@ if __name__ == '__main__':
     args = parse_args() 
     exp_path = args.exp_path
 
-    # 실험 조건 불러오기
+    # 실험조건 불러오기
     conf = utils.load_conf(work_dir_path=work_dir_path, rel_exp_path=exp_path) 
     conf['work_dir_path'] = work_dir_path
 
