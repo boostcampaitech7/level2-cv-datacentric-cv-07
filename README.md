@@ -8,8 +8,7 @@
 
 [👀Model](#final-model) |
 [🤔Issues](https://github.com/boostcampaitech7/level2-objectdetection-cv-07/issues) | 
-[🚀CORD](https://github.com/open-mmlab/mmdetection) |
-[🤗Synthetic Data](https://huggingface.co/docs/transformers/en/index)
+[🚀External Data](https://github.com/open-mmlab/mmdetection) |
 </div>
 
 ## Introduction
