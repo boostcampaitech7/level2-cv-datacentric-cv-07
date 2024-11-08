@@ -1,0 +1,17 @@
+{
+    "run_name": "default",
+    "num_workers": 8,
+    "image_size": 2048,
+    "input_size": 1024,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "max_epoch": 50,
+    "save_interval": 1,
+    "data_dir": "your_data_dir",
+    "json_dir": "your_json_dir",
+    "train_json_name": "your_train_json_name",
+    "valid_json_name": "your_valid_json_name",
+    "test_json_name": "your_test_json_name",
+    "pretrained_path": "your_pretrained_weight_path",
+    "device": "cuda"
+}
