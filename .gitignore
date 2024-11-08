@@ -6,6 +6,8 @@
 pths/
 trained_models/
 predictions/
+__pycache__/
+wandb/
 **/detect.py
 **/__pycache__/
 **/font

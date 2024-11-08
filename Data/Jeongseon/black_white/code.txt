@@ -1,0 +1,1 @@
+morphological gradient, 이진화, closing 적용
