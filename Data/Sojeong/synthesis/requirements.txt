@@ -1,8 +1,0 @@
-lanms-neo>=1.0.2
-numpy<=1.26.4       # tensorboard uses some functions deprecated in numpy 2.0.0
-opencv-python>=4.10.0.84
-shapely>=2.0.5
-tqdm>=4.66.5
-matplotlib>=3.9.0
-albumentations>=1.4.13
-Pillow<=9.5.0
