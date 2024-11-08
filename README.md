@@ -8,7 +8,7 @@
 
 [👀Model](#final-model) |
 [🤔Issues](https://github.com/boostcampaitech7/level2-objectdetection-cv-07/issues) | 
-[🚀External Data](https://github.com/open-mmlab/mmdetection)
+[🚀External Data](#external-data---cord)
 </div>
 
 ## Introduction
@@ -33,25 +33,42 @@
 ## Data
 ```
 dataset
-  ├── annotations
-      ├── train.json # train image에 대한 annotation file (coco format)
-      └── test.json # test image에 대한 annotation file (coco format)
-  ├── train # 4883장의 train image
-  └── test # 4871장의 test image
+  ├── chinese_receipt
+      ├── img # train 및 test image
+      └── ufo # train 및 test image에 대한 annotation file (ufo format)
+  ├── japanese_receipt
+      ├── img # train 및 test image
+      └── ufo # train 및 test image에 대한 annotation file (ufo format)
+  ├── thai_receipt
+      ├── img # train 및 test image
+      └── ufo # train 및 test image에 대한 annotation file (ufo format)
+  └── vietnamese_receipt
+      ├── img # train 및 test image
+      └── ufo # train 및 test image에 대한 annotation file (ufo format)
 ```
-
-## External Data
 
 ## File Tree
 ```
 ├── .github
-├── external_data
-    ├── cord
-    ├── synthetic_data
+├── external-data
+    ├── cord-data
+    ├── synthetic-data
 ├── code
-    ├── 
+    ├── model code
 └── README.md
 ```
+
+## External Data - CORD
+### License and Data Attribution
+
+This project uses the **CORD (Consolidated OCR Dataset)**. The dataset is provided under the [CORD license terms](https://naver-ai.github.io/cord/), and we adhere to these terms within this repository.
+
+### Attribution
+- **Dataset Name**: Consolidated OCR Dataset (CORD)
+- **Provider**: NAVER AI Lab
+- **License**: This dataset is provided under the terms specified in the CORD documentation.
+
+For full details on the CORD license and permissions, please refer to the [official CORD documentation](https://naver-ai.github.io/cord/).
 
 ## Environment Setting
 <table>
