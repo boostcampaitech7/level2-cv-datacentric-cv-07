@@ -103,7 +103,7 @@ def do_training(conf):
 if __name__ == '__main__':
     # train.py 실행 시 conf/default.json 파일에서 기본 실험 조건을 불러옵니다.
     # argument '--exp_path'를 사용하여 기본 조건을 다른 실험 조건 파일로 덮어쓸 수 있습니다.
-    # 사용 예: python train.py --exp_path exp1.json
+    # 사용 예시: python train.py --exp_path exp1.json
     # exp1.json 파일에서 변경할 조건(예: train_json_name, valid_json_name)을 지정하여 실험을 수행할 수 있습니다.
     
     work_dir_path = os.path.dirname(os.path.realpath(__file__)) # train.py의 디렉토리

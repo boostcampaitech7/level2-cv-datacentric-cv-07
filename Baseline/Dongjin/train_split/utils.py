@@ -36,20 +36,6 @@ def renew_if_path_exist(path):
                 
         raise Exception("path 지정을 실패했습니다.")
 
-def read_log(log_path):
-    with open(log_path, 'r') as f:
-        logs = f.readlines()
-
-    result = {'epoch': [], 'precision': [], 'recall': [], 'f1': []}
-
-    for log in logs:
-        match = re.search(r'epoch: (\d+), precision: ([0-9.]+), recall: ([0-9.]+), f1: ([0-9.]+)', log)
-        result['epoch'].append(int(match.group(1)))
-        result['precision'].append(float(match.group(2)))
-        result['recall'].append(float(match.group(3)))
-        result['f1'].append(float(match.group(4)))
-
-    return result
 
 def read_log(log_path=None, logs=None):
     if logs is None:
