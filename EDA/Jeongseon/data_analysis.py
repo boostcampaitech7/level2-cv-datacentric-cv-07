@@ -53,5 +53,6 @@ image_dir = "/data/ephemeral/home/Jeongseon/output/viet"              #이미지
 annotation_path = "/data/ephemeral/home/data/vietnamese_receipt/ufo/train.json"   #어노테이션 경로
 output_dir = "/data/ephemeral/home/Jeongseon/output/viet_1"                           #bounding box 표시된 이미지 저장할 경로
 
+
 # 함수 호출
 process_images_with_bboxes(image_dir, annotation_path, output_dir)
