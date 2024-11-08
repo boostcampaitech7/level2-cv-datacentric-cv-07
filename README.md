@@ -117,8 +117,8 @@ dataset
       <td align="center">🍀서정연</td>
     </tr>
     <tr>
-      <td align="center">데이터 전처리,Augmentation</td>
       <td align="center">서버 관리, Failure Analysis, 앙상블</td>
+      <td align="center">데이터 전처리,Augmentation</td>
       <td align="center">EDA, 데이터 전처리, Augmentation</td>
       <td align="center">데이터 전처리, Augmentation</td>
       <td align="center">스케줄링, 문서화, 데이터 합성</td>
