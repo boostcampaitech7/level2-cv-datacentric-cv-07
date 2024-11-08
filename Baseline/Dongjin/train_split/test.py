@@ -7,6 +7,10 @@ from inference import Inference
 
 
 if __name__ == '__main__':
+    # validate.py는 validation 결과를 predicts/run_name/valid/valid_log.txt에 기록합니다.
+    # test.py 실행 시, run_name/valid/valid_log.txt에서 best_metric이 가장 높은 모델을 불러와 test dataset을 추론 및 저장합니다.
+    # 사용 예시: python test.py
+ 
     mode = 'test'
     best_metric = 'f1'
 
