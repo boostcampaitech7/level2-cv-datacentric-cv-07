@@ -8,7 +8,7 @@
 
 [👀Model](#final-model) |
 [🤔Issues](https://github.com/boostcampaitech7/level2-objectdetection-cv-07/issues) | 
-[🚀External Data](https://github.com/open-mmlab/mmdetection) |
+[🚀External Data](https://github.com/open-mmlab/mmdetection)
 </div>
 
 ## Introduction
