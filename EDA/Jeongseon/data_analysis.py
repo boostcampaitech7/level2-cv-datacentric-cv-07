@@ -49,9 +49,9 @@ def process_images_with_bboxes(image_dir, annotation_path, output_dir):
         print(f"Saved image with bounding boxes to {output_path}")
 
 # 경로
-image_dir = "/data/ephemeral/home/data/chinese_receipt/img/train"              #이미지 경로
-annotation_path = "/data/ephemeral/home/data/chinese_receipt/ufo/train.json"   #어노테이션 경로
-output_dir = "/data/ephemeral/home/Jeongseon/output"                           #bounding box 표시된 이미지 저장할 경로
+image_dir = "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/synth_data/thai_receipt/images"              #이미지 경로
+annotation_path = "/data/ephemeral/home/Sojeong/level2-cv-datacentric-cv-07/Data/Sojeong/synthesis/synth_data/thai_receipt/ufo_data.json"   #어노테이션 경로
+output_dir = "/data/ephemeral/home/output"                           #bounding box 표시된 이미지 저장할 경로
 
 # 함수 호출
 process_images_with_bboxes(image_dir, annotation_path, output_dir)
