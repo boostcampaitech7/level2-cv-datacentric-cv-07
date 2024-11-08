@@ -3,6 +3,10 @@
 **/loss.py
 **/east_dataset.py
 **/detect.py
+**/__pycache__/
+**/font
+synth_data/
+no/
 pths/
 img/
 box_image/
