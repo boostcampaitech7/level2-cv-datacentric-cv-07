@@ -65,7 +65,7 @@ def do_training(data_dir, model_dir, device, image_size, input_size, num_workers
     model.to(device)
     
     # CORD로 pretrain된 모델 weight 불러오기
-    pretrained_fpath = "/data/ephemeral/home/Jungyeon/new_datasets/CORD/cord_pretrained_model_weight.pth"
+    pretrained_fpath = "your cord pretrained weight path"
     model.load_state_dict(torch.load(pretrained_fpath, map_location='cpu'))
     
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)

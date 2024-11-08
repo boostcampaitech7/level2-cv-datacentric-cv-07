@@ -90,7 +90,7 @@ def convert_to_UFO(dataset):
         "holder": "Naver Clova"
         }
         
-    with open('cord.json', 'w', encoding='utf-8') as f:
+    with open('your annotation path', 'w', encoding='utf-8') as f:
         json.dump(cord, f, indent=4)
     return
 

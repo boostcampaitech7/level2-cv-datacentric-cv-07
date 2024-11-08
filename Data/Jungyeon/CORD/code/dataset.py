@@ -348,7 +348,7 @@ class SceneTextDataset(Dataset):
         self.split = split
         total_anno = dict(images=dict())
     
-        with open(osp.join(root_dir, 'cord.json'), 'r', encoding='utf-8') as f:
+        with open(osp.join(root_dir, 'your cord annotation path'), 'r', encoding='utf-8') as f:
             anno = json.load(f)
         
         for im in anno['images']:
@@ -362,20 +362,6 @@ class SceneTextDataset(Dataset):
 
         self.drop_under_threshold = drop_under_threshold
         self.ignore_under_threshold = ignore_under_threshold
-
-    def _infer_dir(self, fname):
-        lang_indicator = fname.split('.')[1]
-        if lang_indicator == 'zh':
-            lang = 'chinese'
-        elif lang_indicator == 'ja':
-            lang = 'japanese'
-        elif lang_indicator == 'th':
-            lang = 'thai'
-        elif lang_indicator == 'vi':
-            lang = 'vietnamese'
-        else:
-            raise ValueError
-        return osp.join(self.root_dir, f'{lang}_receipt', 'img', self.split)
     
     def __len__(self):
         return len(self.image_fnames)

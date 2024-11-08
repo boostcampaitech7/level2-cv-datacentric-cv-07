@@ -349,7 +349,7 @@ class SceneTextDataset(Dataset):
         total_anno = dict(images=dict())
         print(root_dir)
         for nation in self._lang_list:
-            with open(osp.join(root_dir, '{}_receipt/{}_ufo_data.json'.format(nation, nation)), 'r', encoding='utf-8') as f:
+            with open(osp.join(root_dir, 'your annotation path'), 'r', encoding='utf-8') as f:
                 anno = json.load(f)
 
             for im in anno['images']:
