@@ -14,22 +14,26 @@ if __name__ == '__main__':
     mode = 'test'
     best_metric = 'f1'
 
+    # 파일 경로 포맷 정의
     test_path_format = 'predicts/{run_name}/{mode}/{run_name}_{mode}_ep_{epoch}_f1_{f1:.4f}.csv'
     valid_log_path_format = 'predicts/{run_name}/valid/valid_log.txt'
     pth_path_format = 'trained_models/{run_name}/{epoch}.pth'
 
+    # exp.json 파일 찾기
     work_dir_path = os.path.dirname(os.path.realpath(__file__)) # 현재 python 파일 디렉토리
     conf_paths = glob(work_dir_path + '/trained_models/*/exp.json', recursive=True) 
     conf_paths.sort()
 
     for conf_path in conf_paths: 
-        conf_dir_path = os.path.dirname(conf_path)
-        conf = utils.read_json(conf_path)
-        run_name = conf['run_name']
+        conf_dir_path = os.path.dirname(conf_path) # exp.json이 존재하는 폴더
+        conf = utils.read_json(conf_path) # exp.json 읽어오기
+        run_name = conf['run_name'] # run_name 지정
 
+        # valid_log 불러오기 
         valid_log_path = os.path.join(work_dir_path, valid_log_path_format.format(run_name=run_name))
         valid_log = utils.read_log(valid_log_path)
 
+        # 가장 best_metric이 높은 epoch 찾기
         select = {}
         select_index = np.argmax(valid_log[best_metric])
         select['epoch'] = valid_log['epoch'][select_index]
@@ -37,11 +41,14 @@ if __name__ == '__main__':
         select['recall'] = valid_log['recall'][select_index]
         select['f1'] = valid_log['f1'][select_index]
 
+        # 가장 best_metric이 높은 epoch으로 ckpt_path 지정
+        # save_path 지정
         ckpt_path = os.path.join(work_dir_path, 
                                 pth_path_format.format(run_name=run_name, epoch=select['epoch']))
         save_test_path = os.path.join(work_dir_path,
                                 test_path_format.format(run_name=run_name, mode=mode, epoch=select['epoch'], f1=select['f1']))
         
+        # save_test_path가 존재하면 무시
         if os.path.exists(save_test_path):
             continue
 
@@ -50,6 +57,7 @@ if __name__ == '__main__':
         with open(save_test_path, 'w') as f:
             f.write("")
         
+        # test 추론 수행
         print(f"Predicting and saving {save_test_path}...")
         test = Inference(work_dir_path=work_dir_path, conf=conf, mode=mode)
         predicts = test.save_inference(ckpt_path, save_path=save_test_path)
