@@ -2,6 +2,10 @@
 **/model.py
 **/loss.py
 **/east_dataset.py
+**/deteval.py
+pths/
+trained_models/
+predictions/
 **/detect.py
 **/__pycache__/
 **/font
