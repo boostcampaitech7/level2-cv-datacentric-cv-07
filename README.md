@@ -28,8 +28,6 @@
 베이스라인 모델은 EAST (An Efficient and Accurate Scene Text Detector; Zhou et al., 2017)이고, Backbone로는 ImageNet에 사전훈련된 VGG-16 (Visual Geometry Group - 16 layers; Simonyan and Zisserman, 2015)을 사용합니다.
 
 
-
-
 ## Data
 ```
 dataset
@@ -46,6 +44,16 @@ dataset
       ├── img # train 및 test image
       └── ufo # train 및 test image에 대한 annotation file (ufo format)
 ```
+
+
+## User Guide
+```
+cd code # code 폴더로 이동
+python train.py # 모델 학습 실행
+python validate.py # 학습된 가중치를 불러와 validation 수행
+python test.py # 가장 높은 validation 점수를 기록한 가중치를 불러와 test 데이터셋에 대한 추론 수행 
+```
+
 
 ## File Tree
 ```
