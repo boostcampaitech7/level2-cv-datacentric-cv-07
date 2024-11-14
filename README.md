@@ -146,7 +146,7 @@ For full details on the CORD license and permissions, please refer to the [offic
       <td align="center">데이터 전처리, <br>Augmentation</td>
       <td align="center">EDA, 데이터 전처리, <br>Augmentation</td>
       <td align="center">데이터 전처리, <br>Augmentation</td>
-      <td align="center">스케줄링, <br>문서화, <br>데이터 합성</td>
+      <td align="center">데이터 합성, <br>스케줄링, <br>문서화</td>
       <td align="center">외부 데이터셋 학습, <br>깃 관리</td>
     </tr>
   </table>
